@@ -1,0 +1,33 @@
+body {
+    background-color: #4677ff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .flashcard {
+    background-color: #b3b3b3;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+  .flashcard:hover {
+    transform: scale(1.05);
+  }
+  .frente, .verso {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .frente {
+    display: block; /* A frente é exibida inicialmente */
+  }

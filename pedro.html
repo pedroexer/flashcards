@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Meus Flashcards</title>
+</head>
+<body>
+ <h1>Flashcards sobre Mentzer</h1>
+ 
+ <div class="flashcard" onclick="virarFlashcard(this)">
+   <div class="frente">
+     <p> Quem foi Mike Mentzer</p>
+   </div>
+   <div class="verso">
+     <p>Mike Mentzer (Ephrata, Pensilvânia, 15 de Novembro de 1951 - Rolling Hills, 10 de Junho de 2001) foi um fisiculturista estadunidense, profissional da IFBB, além de empresário e autor de livros.</p>
+   </div>
+ </div>
+
+ <script> // solução por: Pedro 
+   function virarFlashcard(flashcard) {
+     const frente = flashcard.querySelector('.frente');
+     const verso = flashcard.querySelector('.verso');
+     if (frente.style.display === 'none') {
+       frente.style.display = 'block';
+       verso.style.display = 'none';
+     } else {
+       frente.style.display = 'none';
+       verso.style.display = 'block';
+     }
+   }
+ </script>
+</body>
+</html>
